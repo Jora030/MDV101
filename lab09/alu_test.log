@@ -1,0 +1,9 @@
+Script started on 2025-03-09 15:32:40+05:00 [COMMAND="vvp alu_tb" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="237" LINES="63"]
+VCD info: dumpfile alu_tb.vcd opened for output.
+A = 0005, B = 0003, Mode = 00, Op = 00, Out = 0008, Compare = 0
+A = 000a, B = 0004, Mode = 00, Op = 01, Out = 0006, Compare = 0
+A = 00ff, B = 0f0f, Mode = 01, Op = 00, Out = 000f, Compare = 0
+A = 00ff, B = 0f0f, Mode = 01, Op = 01, Out = 0fff, Compare = 0
+alu_tb.v:39: $finish called at 40000 (1ps)
+
+Script done on 2025-03-09 15:32:40+05:00 [COMMAND_EXIT_CODE="0"]
