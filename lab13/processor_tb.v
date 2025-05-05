@@ -5,11 +5,11 @@ processor uut (.clk(clk));
 
 initial begin
     clk = 0;
-    forever #5 clk = ~clk; // Период такта 10 единиц
+    forever #5 clk = ~clk;
 end
 
 initial begin
-    #300 $finish; // Остановить симуляцию через 300 единиц времени
+    #300 $finish;
 end
 
 initial begin
