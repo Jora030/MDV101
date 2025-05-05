@@ -1,7 +1,7 @@
 #include "bitty_emu.h"
 
 BittyEmulator::BittyEmulator() {
-    registers_.resize(8, 0);  // 8 регистров, инициализируем нулями
+    registers_.resize(8, 0); 
 }
 
 uint16_t BittyEmulator::Evaluate(uint16_t instruction) {
@@ -11,22 +11,22 @@ uint16_t BittyEmulator::Evaluate(uint16_t instruction) {
     uint16_t rs2 = instruction & 0xF;
 
     switch (opcode) {
-        case 0x0:  // ADD
+        case 0x0:
             registers_[rd] = registers_[rs1] + registers_[rs2];
             break;
-        case 0x1:  // SUB
+        case 0x1:
             registers_[rd] = registers_[rs1] - registers_[rs2];
             break;
-        case 0x2:  // AND
+        case 0x2:
             registers_[rd] = registers_[rs1] & registers_[rs2];
             break;
-        case 0x3:  // OR
+        case 0x3:
             registers_[rd] = registers_[rs1] | registers_[rs2];
             break;
-        case 0x4:  // XOR
+        case 0x4:
             registers_[rd] = registers_[rs1] ^ registers_[rs2];
             break;
-        case 0xF:  // LDI (Load Immediate)
+        case 0xF:
             registers_[rd] = rs2;
             break;
         default:
