@@ -13,11 +13,11 @@ int main() {
     assert(emu.GetRegisterValue(1) == 10);
     std::cout << "Test LDI R1 passed.\n";
 
-    emu.Evaluate(0x0210);  // opcode=0 (ADD), rd=2, rs1=1, rs2=0
+    emu.Evaluate(0x0210);
     assert(emu.GetRegisterValue(2) == 15);
     std::cout << "Test ADD passed.\n";
 
-    emu.Evaluate(0x1310);  // opcode=1 (SUB), rd=3, rs1=1, rs2=0
+    emu.Evaluate(0x1310);
     assert(emu.GetRegisterValue(3) == 5);
     std::cout << "Test SUB passed.\n";
 
