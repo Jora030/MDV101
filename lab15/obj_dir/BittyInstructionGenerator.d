@@ -1,0 +1,1 @@
+BittyInstructionGenerator.o: ../BittyInstructionGenerator.cpp
