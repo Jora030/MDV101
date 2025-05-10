@@ -1,0 +1,7 @@
+ADD
+ADD
+BIE 5
+SUB
+SUB
+BIL 2
+XOR
