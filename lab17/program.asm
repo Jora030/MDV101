@@ -1,0 +1,5 @@
+ADD
+XOR
+CLR
+SUB
+SHL
